@@ -1,0 +1,19 @@
+const softwareValues = [inputData.software1, inputData.software2, inputData.software3, inputData.software4, inputData.software5, inputData.software6];
+const keywords = ["FOOBAR_KEYWORD_A", "FOOBAR_KEYWORD_B"];
+
+if (softwareValues.some(val =>
+  typeof val === "string" &&
+  keywords.some(keyword =>
+    val.toLowerCase().includes(keyword.toLowerCase())
+  )
+)) {
+  return {
+    notice: "<b><u>PAY ONLINE NOTICE</u></b><br>One or more of your selected software uses a \"Pay Online\" feature which allows players to purchase credits with Bitcoin, but requires you to create a Bitcoin Address to withdraw revenue. Please download <a href=\"" + inputData.attachmentFile + "\">This Bitcoin Account Setup Guide</a> for instructions.<br><br>To disable this feature, reply to this email and request it to be disabled. You may also request it to be disabled in future requests by using the \"Additional Notes\" or \"Request Notes\" section of the Request Form.<br><br>",
+    attachment: inputData.attachmentFile
+  };
+} else {
+  return {
+    notice: "",
+    attachment: "",
+  };
+}

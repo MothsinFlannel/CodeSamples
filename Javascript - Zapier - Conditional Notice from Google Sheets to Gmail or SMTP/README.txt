@@ -1,0 +1,1 @@
+A quick script that runs in Zapier before an automated email is sent to clients. If one of the Keywords (written as "FOOBAR" in this sample) is detected in the Google Sheets trigger document values (represented as software1, 2, 3, etc...) it will attach an HTML snippet into the final email providing a notice regarding the specific software.
