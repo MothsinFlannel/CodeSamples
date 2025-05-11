@@ -1,0 +1,239 @@
+{
+    "types":
+    {
+        "Balance":
+        {
+            "id": 1,
+            "name": "Balance",
+            "color": "Gray",
+            "offense":
+            {
+                "strongAgainst": [],
+                "weakAgainst": [],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": [],
+                "weakAgainst": [],
+                "immuneTo": []
+            }
+        },
+        "Fighting":
+        {
+            "id": 2,
+            "name": "Fighting",
+            "color": "DarkBrown",
+            "offense":
+            {
+                "strongAgainst": ["Earth", "Ice", "Fiend"],
+                "weakAgainst": ["Psychic", "Air", "Fairy"],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": ["Earth", "Fiend"],
+                "weakAgainst": ["Psychic", "Air", "Fairy"],
+                "immuneTo": []
+            }
+        },
+        "Psychic":
+        {
+            "id": 3,
+            "name": "Psychic",
+            "color": "HotPink",
+            "offense":
+            {
+                "strongAgainst": ["Fighting"],
+                "weakAgainst": ["Psychic", "Ice"],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": ["Fighting", "Psychic"],
+                "weakAgainst": ["Fiend"],
+                "immuneTo": []
+            }
+        },
+        "Earth":
+        {
+            "id": 4,
+            "name": "Earth",
+            "color": "LightBrown",
+            "offense":
+            {
+                "strongAgainst": ["Ice", "Electric", "Fire"],
+                "weakAgainst": ["Fighting", "Earth", "Grass"],
+                "immuneTo": ["Air"]
+            },
+            "defense":
+            {
+                "strongAgainst": ["Earth", "Air", "Fire", "Ancient"],
+                "weakAgainst": ["Fighting", "Grass", "Ice", "Water"],
+                "immuneTo": ["Electric"]
+            }
+        },
+        "Grass":
+        {
+            "id": 5,
+            "name": "Grass",
+            "color": "Green",
+            "offense":
+            {
+                "strongAgainst": ["Earth", "Water"],
+                "weakAgainst": ["Grass", "Air", "Fire", "Ancient", "Ice"],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": ["Earth", "Grass", "Electric", "Water"],
+                "weakAgainst": ["Ice", "Air", "Fire"],
+                "immuneTo": []
+            }
+        },
+        "Ice":
+        {
+            "id": 6,
+            "name": "Ice",
+            "color": "LightBlue",
+            "offense":
+            {
+                "strongAgainst": ["Grass", "Air", "Ancient", "Fairy"],
+                "weakAgainst": ["Earth", "Ice", "Water"],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": ["Psychic", "Ice", "Fairy", "Fiend"],
+                "weakAgainst": ["Fighting", "Earth", "Fire"],
+                "immuneTo": []
+            }
+        },
+        "Electric":
+        {
+            "id": 7,
+            "name": "Electric",
+            "color": "Yellow",
+            "offense":
+            {
+                "strongAgainst": ["Water", "Air", "Fairy"],
+                "weakAgainst": ["Grass", "Electric", "Ancient"],
+                "immuneTo": ["Earth"]
+            },
+            "defense":
+            {
+                "strongAgainst": ["Electric", "Air", "Fairy"],
+                "weakAgainst": ["Earth"],
+                "immuneTo": []
+            }
+        },
+        "Water":
+        {
+            "id": 8,
+            "name": "Water",
+            "color": "Blue",
+            "offense":
+            {
+                "strongAgainst": ["Earth", "Fire"],
+                "weakAgainst": ["Grass", "Water", "Ancient"],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": ["Ice", "Water", "Fire"],
+                "weakAgainst": ["Grass", "Electric"],
+                "immuneTo": []
+            }
+        },
+        "Air":
+        {
+            "id": 9,
+            "name": "Air",
+            "color": "SkyBlue",
+            "offense":
+            {
+                "strongAgainst": ["Fighting", "Grass"],
+                "weakAgainst": ["Earth", "Electric", "Air"],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": ["Fighting", "Grass", "Air"],
+                "weakAgainst": ["Ice", "Electric"],
+                "immuneTo": ["Earth"]
+            }
+        },
+        "Fire":
+        {
+            "id": 10,
+            "name": "Fire",
+            "color": "Red",
+            "offense":
+            {
+                "strongAgainst": ["Grass", "Ice"],
+                "weakAgainst": ["Earth", "Water", "Fire", "Ancient"],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": ["Grass", "Fire", "Fairy"],
+                "weakAgainst": ["Earth", "Water"],
+                "immuneTo": []
+            }
+        },
+        "Ancient":
+        {
+            "id": 11,
+            "name": "Ancient",
+            "color": "MossGreen",
+            "offense":
+            {
+                "strongAgainst": ["Ancient"],
+                "weakAgainst": ["Earth"],
+                "immuneTo": ["Fairy"]
+            },
+            "defense":
+            {
+                "strongAgainst": ["Grass", "Electric", "Water", "Fire"],
+                "weakAgainst": ["Ice", "Ancient", "Fairy"],
+                "immuneTo": []
+            }
+        },
+        "Fairy":
+        {
+            "id": 12,
+            "name": "Fairy",
+            "color": "LightPink",
+            "offense":
+            {
+                "strongAgainst": ["Fighting", "Ancient", "Fiend"],
+                "weakAgainst": ["Ice", "Fire", "Electric"],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": ["Fighting", "Fiend"],
+                "weakAgainst": ["Ice", "Electric"],
+                "immuneTo": ["Ancient"]
+            }
+        },
+        "Fiend":
+        {
+            "id": 13,
+            "name": "Fiend",
+            "color": "Indigo",
+            "offense":
+            {
+                "strongAgainst": ["Psychic", "Fiend"],
+                "weakAgainst": ["Fighting", "Ice", "Fairy"],
+                "immuneTo": []
+            },
+            "defense":
+            {
+                "strongAgainst": [],
+                "weakAgainst": ["Fighting", "Fairy", "Ancient"],
+                "immuneTo": []
+            }
+        }
+    }
+}
